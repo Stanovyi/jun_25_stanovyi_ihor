@@ -1,6 +1,10 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+
+  --heading-color: #2f4f4f;
+  --background-color: #eee;
+  --decorative-color: #8b0000;
 }
 
 .people {
@@ -19,7 +23,7 @@ body {
     transition-delay: 1s;
 
     .name {
-      color: #2f4f4f;
+      color: var(--heading-color);
       font-weight: 700;
     }
   }
@@ -29,13 +33,13 @@ body {
   }
 
   .person:hover {
-    background-color: #eee;
+    background-color: var(--background-color);
     border-radius: 10px;
     transform: scale(1.2);
     border-radius: 12px;
 
     .details {
-      background-color: #eee;
+      background-color: var(--background-color);
       border-radius: 10px;
     }
   }
@@ -58,8 +62,8 @@ body {
       right: 10px;
       width: 32px;
       height: 32px;
-      background-color: #fff;
-      color: #8b0000;
+      background-color: var(--background-color);
+      color: var(--decorative-color);
       border-radius: 50%;
     }
   }
