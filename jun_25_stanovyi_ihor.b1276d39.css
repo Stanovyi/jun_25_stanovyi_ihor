@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.people {
+  grid-template-columns: 200px 200px;
+  justify-content: center;
+  justify-items: center;
+  gap: 40px 30px;
+  margin-top: 30px;
+  display: grid;
+}
+
+.people .person {
+  box-sizing: border-box;
+  padding: 10px;
+  transition: transform .3s 1s;
+}
+
+.people .person .name {
+  color: #2f4f4f;
+  font-weight: 700;
+}
+
+.people .extra {
+  display: block;
+}
+
+.people .person:hover {
+  background-color: #eee;
+  border-radius: 12px;
+  transform: scale(1.2);
+}
+
+.people .person:hover .details {
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+.people .photo {
+  position: relative;
+}
+
+.people .photo img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 8px;
+}
+
+.people .photo .rank {
+  text-align: center;
+  color: #8b0000;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  position: absolute;
+  top: 84px;
+  right: 10px;
+}
+
+.people .name {
+  justify-content: center;
+  display: flex;
+}
+
+.people .extra {
+  text-align: center;
+  margin-top: 9px;
+  font-size: 18px;
+}
+
+@media (width >= 1000px) {
+  .people {
+    grid-template-columns: 200px 200px 200px 200px;
+  }
+}
+/*# sourceMappingURL=jun_25_stanovyi_ihor.b1276d39.css.map */
